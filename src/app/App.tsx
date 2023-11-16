@@ -1,9 +1,23 @@
-import s from './App.module.css';
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { MainPage } from '../feature/MainPage/MainPage'
+import s from './App.module.css'
+import * as api from './api'
 
-export default function App() {
+function App() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    api
+      .getSymbols()
+      .then(data => dispatch({ type: 'INIT_SYMBOL', payload: data.symbols }))
+  }, [dispatch])
+
   return (
-    <div>
-      <p className={s.container}>Hello</p>
+    <div className={s.container}>
+      <MainPage />
     </div>
-  );
+  )
 }
+
+export default App

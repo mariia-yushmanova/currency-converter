@@ -1,0 +1,17 @@
+export const FLAGS_URL = [
+  '/flags/usa.png',
+  '/flags/albania-circular.png',
+  '/flags/argentina.png',
+  '/flags/aruba-circular.png',
+  '/flags/canada.png',
+  '/flags/china.png',
+  '/flags/egypt.png',
+  '/flags/ethiopia.png',
+  '/flags/germany.png',
+  '/flags/guatemala.png',
+  '/flags/kazakhstan.png',
+  '/flags/liberia.png',
+  '/flags/niger-circular.png',
+  '/flags/russian-federation.png',
+  '/flags/tunisia.png',
+]
